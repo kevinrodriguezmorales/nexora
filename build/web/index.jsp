@@ -9,6 +9,42 @@
         <link rel="stylesheet" href="resources/styles/login.css?v=1.0.0">
     </head>
     <body>
-        <h1>Hello World vew!</h1>
+        <div class="login-wrapper">
+            <div class="login-form">
+                <div class="login-form__header">
+                    <img src="resources/images/nexora.svg" alt="nexora">
+                </div>
+                <div class="login-form__body">
+                    <div class="secondary-container">
+                            <div class="grid-container">
+                                <div class="col-3">
+                                    <div class="control-form">
+                                        <div class="control-group">
+                                            <label>Correo</label>
+                                            <input type="text"/>
+                                            <div class="control-group-outline"></div>
+                                        </div>
+                                        <div class="control-help">
+                                            <span>Colocar * para autogener código</span>
+                                        </div>
+                                    </div>
+                                    <div class="control-form">
+                                        <div class="control-group">
+                                            <label>Correo</label>
+                                            <input type="text"/>
+                                            <div class="control-group-outline"></div>
+                                        </div>
+                                        <div class="control-help">
+                                            <span>Colocar * para autogener código</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <div class="login-image"></div>
+        </div>
     </body>
 </html>
