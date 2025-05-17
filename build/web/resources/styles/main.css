@@ -164,7 +164,6 @@ button {
     font-size: 16px;
     line-height: 20px;
     font-weight: 500;
-    letter-spacing: 0.5px;
 }
 
 .body-variant {
@@ -175,7 +174,6 @@ button {
 .body-small {
     font-size: 12px;
     line-height: 20px;
-    letter-spacing: 0.5px;
 }
 
 .caption {
@@ -447,19 +445,25 @@ tbody td {
 }
 
 .control-group input,
-.control-group select {
+.control-group select,
+.control-group textarea {
     --height-size: 20px;
     border: none;
     font-size: 16px;
     line-height: var(--height-size);
-    height: var(--height-size);
     width: 100%;
     background: transparent;
     font-family: var(--font-primary);
 }
 
+.control-group input,
+.control-group select {
+    height: var(--height-size);
+}
+
 .control-group input:focus-visible,
-.control-group select:focus-visible {
+.control-group select:focus-visible,
+.control-group textarea:focus-visible {
     outline: none;
 }
 
@@ -612,6 +616,12 @@ tbody td {
     margin: 0 auto;
 }
 
+/* Display and containers*/
+
+.block {
+    display: block;
+}
+
 .flex-container,
 .flex {
     display: flex;
@@ -698,8 +708,13 @@ tbody td {
     gap: 0;
 }
 
+.gutter-minimum,
 .spacing-minimum {
     gap: 4px;
+}
+
+.spacing-bottom-minimum {
+    margin-bottom: 4px;
 }
 
 .spacing-medium {

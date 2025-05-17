@@ -19,7 +19,7 @@
             <div class="inner-header">
                 <div class="secondary-container flex-container full-width flex-justify-between">
                     <h2 class="headline-2">Ventas</h2>
-                    <a href="Controller?menu=CreateSaleView" class="button elevated-button">Crear empleado <span class="material-icons">add</span></a>
+                    <a href="Controller?menu=CreateSaleView" class="button elevated-button">Crear venta <span class="material-icons">add</span></a>
                 </div>
             </div>
             <div class="inner-body">
