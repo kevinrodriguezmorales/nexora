@@ -1,0 +1,96 @@
+
+.main-header {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    height: 256px;
+}
+
+.cards {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: -86px;
+    margin-bottom: 16px;
+}
+
+.card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, .25);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card__icon {
+    --size: 40px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__desciption span:first-child {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.card__desciption span:last-child {
+    font-size: 10px;
+    color: var(--color-text-menu);
+}
+
+.summaries {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.recent-contacts,
+.comming-soon {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+}
+
+.comming-soon {
+    grid-column: 1/4;
+}
+
+.recent-contacts {
+    grid-column: 4/6;
+}
+
+.recent-contacts__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.contact-summary {
+    display: flex;
+    gap: 12px;
+    padding: 12px;
+    align-items: center;
+}
+
+.contact-summary__photograph {
+    --size:32px;
+    height: var(--size);
+    width: var(--size);
+    border-radius: calc(var(--size) / 2);
+    overflow: hidden;
+}
+
+.contact-summary__photograph img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
